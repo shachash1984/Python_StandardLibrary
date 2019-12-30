@@ -2,6 +2,7 @@
 import shutil
 import tempfile
 import time
+import os
 
 # TODO
 # create a tmp directory and
@@ -15,5 +16,5 @@ try:
     f.write("this is a test")
     f.close()
 finally:
-    time.sleep(10)
+    time.sleep(15)
     shutil.rmtree(t, ignore_errors=True)
